@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #080b0c;
+    background-color: gray;
 }
 
 header {
@@ -186,7 +186,7 @@ header {
 }
 
 .travel {
-    padding: 50px 0 50px 0;
+    padding: 50px 0 60px 0;
 }
 
 .travel .box-travel {
@@ -197,6 +197,7 @@ header {
 }
 
 .travel .box-travel .box {
+    margin-bottom: 20px;
     text-align: center;
     color: white;
     transition: all .3s ease;
@@ -212,17 +213,33 @@ header {
         -moz-transform: translateY(-20px);
         -ms-transform: translateY(-20px);
         -o-transform: translateY(-20px);
+        box-shadow: 0 4px cyan, 0 10px black, 0 0 15px black, 0 0 10px black;
+        border-radius: 50px;
 }
 
 .travel .box-travel .box img {
     width: 100%;
     height: 200px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    -webkit-border-radius:5px;
-    -moz-border-radius:5px;
-    -ms-border-radius:5px;
-    -o-border-radius:5px;
+    margin-bottom: 15px;
+    border-radius: 25px;
+    -webkit-border-radius:25px;
+    -moz-border-radius:25px;
+    -ms-border-radius:25px;
+    -o-border-radius:25px;
+    transition: all .3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition:all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+.travel .box-travel .box img:hover {
+    box-shadow: 0 0 10px black, 0 5px black, 0 0 6px gray;
+    transform: translateY(-25px);
+        -webkit-transform: translateY(-25px);
+        -moz-transform: translateY(-25px);
+        -ms-transform: translateY(-25px);
+        -o-transform: translateY(-25px);
 }
 
 .travel .box-travel .box p {
